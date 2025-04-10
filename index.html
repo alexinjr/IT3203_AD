@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vulnerability Management</title>
+    <style>
+        /* General styles for the website */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        /* Navigation Menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #34495e;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            background-color: #2980b9;
+            border-radius: 5px;
+        }
+
+        /* Layout for the main content */
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ecf0f1;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Quiz Styling */
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e1f5e1;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* Image Styling */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header and Navigation Menu -->
+    <header>
+        <h1>Vulnerability Management</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#topics1">Vulnerability Identification</a></li>
+                <li><a href="#topics2">Risk Assessment</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Homepage Section -->
+        <section id="home">
+            <h2>Introduction</h2>
+            <p>
+                Vulnerability management is a process used to identify, evaluate, treat, and report on security vulnerabilities in systems and software. 
+                It is a crucial practice in maintaining the security of an organization's information systems and preventing cyberattacks.
+            </p>
+
+            <!-- Added image related to cybersecurity -->
+            <img src="c:\Users\alexi\Downloads\IntroWEB\ADJ.jpg" alt="Cybersecurity Awareness">
+
+            <h3>Key Terms</h3>
+            <ul>
+                <li><strong>Vulnerability:</strong> A weakness in a system that can be exploited by an attacker.</li>
+                <li><strong>Risk:</strong> The likelihood of a vulnerability being exploited and the potential impact it can cause.</li>
+                <li><strong>Exploit:</strong> A tool or technique used to take advantage of a vulnerability.</li>
+                <li><strong>Patch Management:</strong> The process of updating software to fix vulnerabilities.</li>
+            </ul>
+        </section>
+
+        <!-- Vulnerability Identification Topic Page -->
+        <section id="topics1">
+            <h2>Vulnerability Identification</h2>
+            <p>
+                Vulnerability identification is the first step in vulnerability management. It involves discovering and cataloging the vulnerabilities that exist 
+                in an organization's IT infrastructure, software, and networks. Vulnerabilities can be identified through automated tools, penetration testing, 
+                and manual reviews.
+            </p>
+
+            <!-- Added image related to vulnerability scanning -->
+            <img src="c:\Users\alexi\Downloads\IntroWEB\AJ.jpg" alt="Vulnerability Scanning">
+
+            <h3>Methods for Vulnerability Identification</h3>
+            <ul>
+                <li><strong>Automated Scanning:</strong> Tools like Nessus or OpenVAS can scan systems for known vulnerabilities.</li>
+                <li><strong>Penetration Testing:</strong> Security professionals simulate attacks to uncover vulnerabilities.</li>
+                <li><strong>Code Reviews:</strong> Inspecting source code for potential vulnerabilities, especially in web applications.</li>
+            </ul>
+            <h3>Common Vulnerabilities</h3>
+            <table>
+                <tr>
+                    <th>Vulnerability</th>
+                    <th>Severity</th>
+                </tr>
+                <tr>
+                    <td>SQL Injection</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>Cross-Site Scripting (XSS)</td>
+                    <td>Medium</td>
+                </tr>
+                <tr>
+                    <td>Buffer Overflow</td>
+                    <td>High</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Risk Assessment Topic Page -->
+        <section id="topics2">
+            <h2>Risk Assessment</h2>
+            <p>
+                Risk assessment is the process of identifying potential risks associated with vulnerabilities. Once vulnerabilities are identified, 
+                risk assessment determines the likelihood and impact of these vulnerabilities being exploited. The goal is to prioritize remediation efforts.
+            </p>
+            <h3>Risk Assessment Process</h3>
+            <ol>
+                <li><strong>Identify Assets:</strong> Recognize the value of the assets that need protection.</li>
+                <li><strong>Identify Threats:</strong> Understand potential threats that could exploit vulnerabilities.</li>
+                <li><strong>Analyze Impact:</strong> Estimate the consequences if a vulnerability is exploited.</li>
+                <li><strong>Mitigation:</strong> Develop strategies to address or reduce risks.</li>
+            </ol>
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz">
+            <h2>Self-Assessment Quiz</h2>
+            <form id="quizForm">
+                <!-- Multiple Choice (One Correct) -->
+                <div class="question">
+                    <label>1. What is the first step in vulnerability management?</label>
+                    <input type="radio" name="q1" value="a"> Patch Management<br>
+                    <input type="radio" name="q1" value="b"> Risk Assessment<br>
+                    <input type="radio" name="q1" value="c"> Vulnerability Identification<br>
+                </div>
+
+                <!-- Fill in the blank -->
+                <div class="question">
+                    <label>2. A __________ is a weakness that can be exploited by a threat actor.</label>
+                    <input type="text" name="q2">
+                </div>
+
+                <!-- Multiple Choice (One Correct) -->
+                <div class="question">
+                    <label>3. Which tool is commonly used for vulnerability scanning?</label>
+                    <input type="radio" name="q3" value="a"> Wireshark<br>
+                    <input type="radio" name="q3" value="b"> Nessus<br>
+                    <input type="radio" name="q3" value="c"> Nmap<br>
+                </div>
+
+                <!-- Multiple Choice (Multiple Correct) -->
+                <div class="question">
+                    <label>4. Which of the following are methods for vulnerability identification? (Choose all that apply)</label>
+                    <input type="checkbox" name="q4" value="a"> Automated Scanning<br>
+                    <input type="checkbox" name="q4" value="b"> Social Media Monitoring<br>
+                    <input type="checkbox" name="q4" value="c"> Code Reviews<br>
+                    <input type="checkbox" name="q4" value="d"> Penetration Testing<br>
+                </div>
+
+                <button type="button" onclick="submitQuiz()">Submit</button>
+                <button type="button" onclick="restartQuiz()">Restart</button>
+            </form>
+
+            <div id="result" class="result" style="display: none;"></div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Vulnerability Management Website</p>
+    </footer>
+
+    <!-- JavaScript for Quiz Logic -->
+    <script>
+        function submitQuiz() {
+            let score = 0;
+            const total = 4;
+            const result = document.getElementById('result');
+            let output = '';
+
+            // Question 1 - Check if the correct answer (c) was selected
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            if (q1 && q1.value === 'c') score++;
+            output += `<p>1. Your answer: ${q1 ? q1.value : 'None'} - Correct: c</p>`;
+
+            // Question 2 - Check if the correct answer is "vulnerability"
+            const q2 = document.querySelector('input[name="q2"]').value.trim().toLowerCase();
+            if (q2 === 'vulnerability') score++;
+            output += `<p>2. Your answer: ${q2} - Correct: vulnerability</p>`;
+
+            // Question 3 - Check if the correct answer (b) was selected
+            const q3 = document.querySelector('input[name="q3"]:checked');
+            if (q3 && q3.value === 'b') score++;
+            output += `<p>3. Your answer: ${q3 ? q3.value : 'None'} - Correct: b</p>`;
+
+             // Question 4 - Check if all correct options (a, c, d) were selected
+            const q4Answers = ['a', 'c', 'd'];
+            const q4Checks = Array.from(document.querySelectorAll('input[name="q4"]:checked')).map(cb => cb.value);
+            const correctSet = new Set(q4Answers);
+            const selectedSet = new Set(q4Checks);
+            const isCorrect = q4Answers.length === q4Checks.length && q4Checks.every(val => correctSet.has(val));
+            if (isCorrect) score++;
+            output += `<p>4. Your answers: ${q4Checks.join(', ')} - Correct: a, c, d</p>`;
+
+            // Display Result
+            result.innerHTML = `<h3>Your Score: ${score}/${total}</h3>
+                                ${output}
+                                <p><strong>${score >= 3 ? 'Pass' : 'Fail'}</strong></p>`;
+            result.style.display = 'block';
+        }
+
+        // Function to restart the quiz
+        function restartQuiz() {
+            document.getElementById('quizForm').reset();
+            document.getElementById('result').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
