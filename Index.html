@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vulnerability Management</title>
+    <style>
+        /* General styles for the website */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        /* Navigation Menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #34495e;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            background-color: #2980b9;
+            border-radius: 5px;
+        }
+
+        /* Layout for the main content */
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ecf0f1;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Quiz Styling */
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e1f5e1;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* Image Styling */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header and Navigation Menu -->
+    <header>
+        <h1>Vulnerability Management</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#topics1">Vulnerability Identification</a></li>
+                <li><a href="#topics2">Risk Assessment</a></li>
+                <li><a href="#topics3">Patch Management</a></li>
+                <li><a href="#topics4">Incident Response</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#references">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Homepage Section -->
+        <section id="home">
+            <h2>Introduction</h2>
+            <p>
+                Vulnerability management is a process used to identify, evaluate, treat, and report on security vulnerabilities in systems and software. 
+                It is a crucial practice in maintaining the security of an organization's information systems and preventing cyberattacks.
+            </p>
+
+            <!-- Added image related to cybersecurity -->
+            <img src="c:\Users\alexi\Downloads\IntroWEB\ADJ.jpg" alt="Cybersecurity Awareness">
+
+            <h3>Key Terms</h3>
+            <ul>
+                <li><strong>Vulnerability:</strong> A weakness in a system that can be exploited by an attacker.</li>
+                <li><strong>Risk:</strong> The likelihood of a vulnerability being exploited and the potential impact it can cause.</li>
+                <li><strong>Exploit:</strong> A tool or technique used to take advantage of a vulnerability.</li>
+                <li><strong>Patch Management:</strong> The process of updating software to fix vulnerabilities.</li>
+            </ul>
+        </section>
+
+        <!-- Vulnerability Identification Topic Page -->
+        <section id="topics1">
+            <h2>Vulnerability Identification</h2>
+            <p>
+                Vulnerability identification is the first step in vulnerability management. It involves discovering and cataloging the vulnerabilities that exist 
+                in an organization's IT infrastructure, software, and networks. Vulnerabilities can be identified through automated tools, penetration testing, 
+                and manual reviews.
+            </p>
+
+            <!-- Added image related to vulnerability scanning -->
+            <img src="c:\Users\alexi\Downloads\IntroWEB\AJ.jpg" alt="Vulnerability Scanning">
+
+            <h3>Methods for Vulnerability Identification</h3>
+            <ul>
+                <li><strong>Automated Scanning:</strong> Tools like Nessus or OpenVAS can scan systems for known vulnerabilities.</li>
+                <li><strong>Penetration Testing:</strong> Security professionals simulate attacks to uncover vulnerabilities.</li>
+                <li><strong>Code Reviews:</strong> Inspecting source code for potential vulnerabilities, especially in web applications.</li>
+            </ul>
+            <h3>Common Vulnerabilities</h3>
+            <table>
+                <tr>
+                    <th>Vulnerability</th>
+                    <th>Severity</th>
+                </tr>
+                <tr>
+                    <td>SQL Injection</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>Cross-Site Scripting (XSS)</td>
+                    <td>Medium</td>
+                </tr>
+                <tr>
+                    <td>Buffer Overflow</td>
+                    <td>High</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Risk Assessment Topic Page -->
+        <section id="topics2">
+            <h2>Risk Assessment</h2>
+            <p>
+                Risk assessment is the process of identifying potential risks associated with vulnerabilities. Once vulnerabilities are identified, 
+                risk assessment determines the likelihood and impact of these vulnerabilities being exploited. The goal is to prioritize remediation efforts.
+            </p>
+            <h3>Risk Assessment Process</h3>
+            <ol>
+                <li><strong>Identify Assets:</strong> Recognize the value of the assets that need protection.</li>
+                <li><strong>Identify Threats:</strong> Understand potential threats that could exploit vulnerabilities.</li>
+                <li><strong>Analyze Impact:</strong> Estimate the consequences if a vulnerability is exploited.</li>
+                <li><strong>Mitigation:</strong> Develop strategies to address or reduce risks.</li>
+            </ol>
+        </section>
+
+        <!-- Patch Management Topic Page -->
+        <section id="topics3">
+            <h2>Patch Management</h2>
+            <p>
+                Patch management is the process of identifying, acquiring, testing, and installing patches or updates to software applications and systems 
+                to fix vulnerabilities. Timely patching is essential to protecting systems from exploitation.
+            </p>
+            <h3>Patch Management Process</h3>
+            <ol>
+                <li><strong>Identify Vulnerabilities:</strong> Use tools and assessments to identify vulnerabilities in systems.</li>
+                <li><strong>Acquire Patches:</strong> Obtain updates or patches from software vendors.</li>
+                <li><strong>Test Patches:</strong> Test patches in a controlled environment to ensure they don’t disrupt systems.</li>
+                <li><strong>Deploy Patches:</strong> Roll out patches to all affected systems as soon as possible.</li>
+            </ol>
+        </section>
+
+        <!-- Incident Response Topic Page -->
+        <section id="topics4">
+            <h2>Incident Response</h2>
+            <p>
+                Incident response is the process of identifying, managing, and mitigating the impact of a security breach or exploit. Organizations must 
+                respond quickly and efficiently to minimize damage and restore normal operations.
+            </p>
+            <h3>Steps in Incident Response</h3>
+            <ol>
+                <li><strong>Preparation:</strong> Establish an incident response plan and assemble a response team.</li>
+                <li><strong>Detection:</strong> Identify and confirm the occurrence of a security incident.</li>
+                <li><strong>Containment:</strong> Limit the scope of the incident to prevent further damage.</li>
+                <li><strong>Eradication:</strong> Remove the cause of the incident from the environment.</li>
+                <li><strong>Recovery:</strong> Restore affected systems and data to normal operation.</li>
+                <li><strong>Lessons Learned:</strong> Analyze the incident to improve future response and security posture.</li>
+            </ol>
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz">
+            <h2>Vulnerability Management Quiz</h2>
+            <form id="quizForm">
+                <div class="question">
+                    <label for="q1">1. Which of the following is a method for identifying vulnerabilities?</label>
+                    <input type="radio" name="q1" value="a"> Automated Scanning<br>
+                    <input type="radio" name="q1" value="b"> Breach Prevention<br>
+                    <input type="radio" name="q1" value="c"> Incident Response<br>
+                </div>
+
+                <div class="question">
+                    <label for="q2">2. What is the goal of patch management?</label>
+                    <input type="radio" name="q2" value="a"> To find vulnerabilities<br>
+                    <input type="radio" name="q2" value="b"> To update software and fix vulnerabilities<br>
+                    <input type="radio" name="q2" value="c"> To restore systems to normal operation<br>
+                </div>
+
+                <div class="question">
+                    <label for="q3">3. What is the first step in an incident response?</label>
+                    <input type="radio" name="q3" value="a"> Detection<br>
+                    <input type="radio" name="q3" value="b"> Preparation<br>
+                    <input type="radio" name="q3" value="c"> Containment<br>
+                </div>
+
+                <button type="button" onclick="checkAnswers()">Submit Answers</button>
+            </form>
+            <div class="result" id="result"></div>
+        </section>
+
+        <!-- References Page -->
+        <section id="references">
+            <h2>References</h2>
+            <ul>
+                <li><a href="https://www.csoonline.com/article/3317667/vulnerability-management-best-practices.html" target="_blank">CSO Online: Vulnerability Management Best Practices</a></li>
+                <li><a href="https://www.sans.org/white-papers/34615/" target="_blank">SANS Institute: The Importance of Vulnerability Management</a></li>
+                <li><a href="https://www.cisa.gov/vulnerability-management" target="_blank">CISA: Vulnerability Management</a></li>
+                <li><a href="https://www.nist.gov/cybersecurity-framework" target="_blank">NIST Cybersecurity Framework</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2025 Vulnerability Management - All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function checkAnswers() {
+            let correctAnswers = 0;
+            let result = document.getElementById('result');
+
+            // Check question 1
+            if (document.querySelector('input[name="q1"]:checked') && document.querySelector('input[name="q1"]:checked').value == "a") {
+                correctAnswers++;
+            }
+
+            // Check question 2
+            if (document.querySelector('input[name="q2"]:checked') && document.querySelector('input[name="q2"]:checked').value == "b") {
+                correctAnswers++;
+            }
+
+            // Check question 3
+            if (document.querySelector('input[name="q3"]:checked') && document.querySelector('input[name="q3"]:checked').value == "b") {
+                correctAnswers++;
+            }
+
+            // Display result
+            result.innerHTML = "You got " + correctAnswers + " out of 3 correct!";
+        }
+    </script>
+</body>
+</html>
